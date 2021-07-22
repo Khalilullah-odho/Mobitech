@@ -1,0 +1,326 @@
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+hr {
+  border-style: dotted;
+  border-color: #428bca;
+  border-bottom: none;
+  width: 20%;
+}
+
+.brandName {
+  margin: 2rem auto 2rem;
+  text-align: center;
+  width: auto;
+  padding: 10px 0;
+  color: #428bca;
+  font-size: 2.5rem;
+  border-bottom: 1px solid;
+  border-bottom-color: #428bca;
+}
+
+
+
+/* Mobile Box */
+.mobileBoxMain {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 2em;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: #e9ecef;
+}
+
+.mobileBoxMain .link {
+  text-decoration: none;
+}
+
+.mobileBox {
+  padding: 5px;
+  margin-bottom: 30px;
+  width: 130px;
+  text-align: center;
+  height: 140px;
+  cursor: pointer;
+  transition: 0.5s;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 5px;
+}
+
+.mobileBox:hover {
+  background: #fff;
+}
+
+.mobileBox img {
+  width: 50px;
+  height: 100px;
+  max-width: 75px;
+  margin: 0 auto 0px;
+}
+
+.p4 {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: none;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  margin: 0 auto 20px auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.price {
+  background: #f3f3f3;
+  color: #428bca;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* MobileList */
+.list-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2em;
+  margin: auto;
+}
+
+.list-column {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  grid-gap: 8rem;
+}
+
+.view-more {
+  width: auto;
+  margin: 4em auto;
+}
+
+/* BrandBox */
+.brand-box-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin: auto;
+  width: auto;
+  height: auto;
+  padding: 2em;
+}
+
+.brand-box {
+  margin: 4rem auto;
+  background: #428bca;
+  padding: 1rem;
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #fff;
+}
+
+.brand-box:hover {
+  border: 1px solid;
+  border-color: #e4efe7;
+  box-shadow: #fff;
+}
+
+/* BrandModel */
+
+.brand-model-name {
+  font-family: "Montserrat";
+  margin: 4rem 0 3rem 100px;
+}
+
+.brand-model-box {
+display: grid;
+grid-template-columns: repeat(4,1fr);
+-ms-grid-column-align: center;
+margin-bottom: 4rem;
+}
+
+
+/* Device Details */
+.device-details{
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  margin-top: 2rem ;
+  padding: 2rem;
+}
+
+.device-details img{
+  max-height: 40vh;
+}
+
+
+.form {
+  width: 50%;
+  margin: 2rem auto;
+  border-radius: 10px;
+  padding: 5rem;
+  background: #fff;
+  position: relative;
+}
+.form h3 {
+  margin-bottom: 3rem;
+}
+
+.specs {
+  margin: 5px;
+  padding: 12px;
+}
+
+.slick-slider {
+  margin-bottom: 2rem;
+}
+
+#footer{
+  background: #48AFFF;
+}
+
+.footer-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons i {
+  margin: 20px 30px;
+  font-size: 2rem;
+  color: #fff;
+}
+.copyright{
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+  .form{
+    width: 100%;
+  }
+
+  .form h3 {
+    margin-top: 4rem;
+  }
+  /* .carousel{
+    margin-bottom: 2rem;
+  } */
+
+  /* .p4-carousel{
+    margin-bottom: 10px;
+  } */
+
+  .brands-wrapper {
+    background: #e4efe7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    text-align: center;
+    padding: 2em;
+    border-radius: 10px;
+  }
+
+  .list-column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    grid-gap: 3rem;
+  }
+
+  .view-more {
+    width: auto;
+    margin: 3em auto;
+  }
+
+  .brand-box-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brand-box {
+    margin: 2rem 2rem;
+  }
+
+  .brand-model-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .device-details{
+    grid-gap: 2rem;
+    padding: 0;
+  }
+}
+
+@media (max-width:400px){
+  .brand-box-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .brand-box {
+    margin: 2rem auto ;
+  }
+
+  .brand-model-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .device-details{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

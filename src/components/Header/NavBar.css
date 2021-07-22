@@ -1,0 +1,156 @@
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    background-color:  #48AFFF;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+  }
+  
+  .nav-logo {
+    color: #fff;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.5rem;
+    flex-grow: 1;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+  }
+  .nav-logo:hover{
+    color: #fff !important;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none !important;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+    font-family: "Montserrat";
+    font-size: 1rem;
+  }
+  .fa-code {
+    margin-left: 1rem;
+  }
+  
+  .navbar-item {
+    line-height: 40px;
+    margin-right: 2rem;
+  }
+  
+  .navbar-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+  
+  .navbar-item:hover:after {
+    width: 100%;
+    background: #1976D2;
+  }
+
+  .navbar-item:hover .navbar-link{
+      color: white;
+  }
+  
+  .navbar-item .active {
+    color: #fff;
+    border-bottom: 2px solid #1976D2;
+  }
+
+  .dropdown-item{
+    background: #fff !important;
+    color: black !important;
+  }
+
+  .dropdown-item:hover{
+    background: #48AFFF !important;
+    color: #fff !important;
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #48AFFF;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+
+    .navbar-item:after{
+      height: 1px;
+    }
+
+    .navbar-item .active {
+      color: #fff;
+      border: none;
+    }
+    .navbar-link {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+
+    .login-btn{
+        text-align: center;
+        width: 50%;
+        margin: 10px 0;   
+    }
+  
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #fff;
+    }
+  }

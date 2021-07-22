@@ -1,0 +1,8 @@
+.dashboard{
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 3rem auto;
+}
